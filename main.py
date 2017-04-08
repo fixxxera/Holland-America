@@ -228,7 +228,7 @@ def parse(ur):
         elif vessel_name == 'Koningsdam':
             if balcony_bucket_price == '' and obstructed == '':
                 if suite_bucket_price == '':
-                    balcony_bucket_price == 'N/A'
+                    balcony_bucket_price = 'N/A'
                 else:
                     balcony_bucket_price = suite_bucket_price
             else:
@@ -240,11 +240,11 @@ def parse(ur):
             if suite_bucket_price == "":
                 if signature == '':
                     if neptune == '':
-                        suite_bucket_price == "N/A"
+                        suite_bucket_price = "N/A"
                     else:
-                        suite_bucket_price == neptune
+                        suite_bucket_price = neptune
                 else:
-                    suite_bucket_price == signature
+                    suite_bucket_price = signature
             else:
                 pass
 
