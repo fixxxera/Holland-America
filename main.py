@@ -326,7 +326,10 @@ def write_file_to_excell(data_array):
             if column_count == 1:
                 worksheet.write_string(row_count, column_count, en, centered)
             if column_count == 2:
-                worksheet.write_string(row_count, column_count, en, centered)
+                try:
+                    worksheet.write_string(row_count, column_count, en, centered)
+                except TypeError:
+                    worksheet.write_string(row_count, column_count, " ", centered)
             if column_count == 3:
                 worksheet.write_string(row_count, column_count, en, centered)
             if column_count == 4:
