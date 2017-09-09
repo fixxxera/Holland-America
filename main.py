@@ -82,6 +82,8 @@ def get_destination(param):
         return ['Gonna know', 'Z']
     elif param == 'F':
         return ['Gonna know', 'F']
+    elif param == 'I':
+        return ['Gonna know', 'I']
     elif param == 'Y':
         return ['Gonna know', 'Y']
     elif param == 'V':
